@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body style="background-color: aquamarine;">
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" style="color: #18a073;" href="#">JobEntry</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto fw-bold">
+                        <li class="nav-item pe-3 pt-2">
+                            <a class="nav-link active" style="color: #18a073;" aria-current="page" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item pe-3 pt-2">
+                            <a class="nav-link" aria-current="page" href="#">ABOUT</a>
+                        </li>
+                        <li class="nav-item dropdown active pe-3 pt-2">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                JOBS
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown pe-3 pt-2">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                PAGES
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item pe-3 pt-2">
+                            <a class="nav-link active" aria-current="page" href="#">CONTACT</a>
+                        </li>
+                        <nav class="navbar bg-body-tertiary">
+                            <form class="container-fluid justify-content-start">
+                                <button class="btn btn-outline-success me-2"
+                                    style="background-color: #1ea175; color: white;" type="button">Post A Job
+                                    -></button>
+                            </form>
+                        </nav>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- home page start here -->
+
+    <div class="container">
+
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+                <div class="carousel-item active position-relative">
+                    <img src="./images/home images.jpg" class="d-block w-100" alt="...">
+                    <button type="button" class="btn btn-success"
+                        style="position: absolute; bottom: 210px; left: 110px;">Search A Job</button>
+                    <button type="button" class="btn btn-primary"
+                        style="position: absolute; bottom: 210px; left: 250px;">Search A Job</button>
+                </div>
+                <div class="carousel-item position-relative">
+                    <img src="./images/home image 2.jpg " class="d-block w-100" alt="...">
+                    <button type="button" class="btn btn-success"
+                        style="position: absolute; bottom: 180px; left: 110px;">Search A Job</button>
+                    <button type="button" class="btn btn-primary border border-1 border-white"
+                        style="position: absolute; bottom: 180px; left: 250px;">Search A Job</button>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </div>
+
+
+    <div class="container">
+        <div class="input p-3" style="background-color: #18a073;">
+            <div class="row">
+
+                <div class="col-md-3">
+                    <div class="form-floating">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                            <option selected>Category</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <label for="floatingSelect">Category</label>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                            <option selected>Location</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <label for="floatingSelect">Location</label>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <button type="button" class="btn btn-dark w-100 pb-4">Search A Job</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- home page start here -->
+
+    <!-- explore by category -->
+
+    <div class="container">
+        <div class="head bg-white p-5">
+            <h1 class="p-5 text-center">Explore By Category</h1>
+
+            <div class="row">
+
+                <div class="col-md-3">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <i class="fa-solid fa-envelopes-bulk fa-2xl" style="color: #18a073;"></i>
+                            <h5 class="card-title pt-3">Marketing</h5>
+                            <p class="card-text h6" style="color: #18a073;">123 Vacancy</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <i class="fa-solid fa-headphones fa-2xl" style="color: #18a073;"></i>
+                            <h5 class="card-title pt-3">Customer Service</h5>
+                            <p class="card-text h6" style="color: #18a073;">123 Vacancy</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <i class="fa-solid fa-user-tie fa-2xl" style="color: #18a073;"></i>
+                            <h5 class="card-title pt-3">Humen Resource</h5>
+                            <p class="card-text h6" style="color: #18a073;">123 Vacancy</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <i class="fa-solid fa-list-check fa-2xl" style="color: #18a073;"></i>
+                            <h5 class="pt-3">Project Manager</h5>
+                            <p class="card-text h6" style="color: #18a073;">123 Vacancy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-3">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <!-- <i class="fa-solid fa-envelopes-bulk fa-2xl" style="color: #18a073;"></i> -->
+                            <i class="fa-solid fa-group-arrows-rotate fa-2xl" style="color: #18a073;"></i>
+                            <h3 class="pt-3">Business Development</h3>
+                            <p class="h6" style="color: #18a073;">123 Vacancy</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <!-- <i class="fa-solid fa-headphones fa-2xl" style="color: #18a073;"></i> -->
+                            <i class="fa-solid fa-handshake fa-2xl" style="color: #18a073;"></i>
+                            <h3 class="pt-3">Sales & Communication</h3>
+                            <p class="h6" style="color: #18a073;">123 Vacancy</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <!-- <i class="fa-solid fa-user-tie fa-2xl" style="color: #18a073;"></i> -->
+                            <i class="fa-solid fa-book-open-reader fa-2xl" style="color: #18a073;"></i>
+                            <h3 class="pt-3">Teaching & Education</h3>
+                            <p class="h6" style="color: #18a073;">123 Vacancy</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <!-- <i class="fa-solid fa-list-check fa-2xl" style="color: #18a073;"></i> -->
+                            <i class="fa-solid fa-compass-drafting fa-2xl" style="color: #18a073;"></i>
+                            <h3 class="pt-3">Designing & Creativety</h3>
+                            <p class="h6" style="color: #18a073;">123 Vacancy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group">
+                <div class="row pt-5">
+
+                    <div class="col-md-6">
+                        <!-- <img src="./images/group image.jpg" alt=""> -->
+                        <img src="./images/group image.jpg" class="img-thumbnail" alt="...">
+                    </div>
+
+                    <div class="col-md-6 ps-5">
+                        <h1>We Help To Get The Job And Find A Talent</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea veniam, architecto dolor minus
+                            ex, corrupti unde sint quaerat culpa non maiores, quasi cumque quibusdam quos?</p>
+
+                        <div class="d-flex align-items-center">
+                            <i class="fa-solid fa-check fa-xl pb-2" style="color: #18a073;"></i>
+                            <p class=" ps-3">Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+
+                        <div class="d-flex align-items-center">
+                            <i class="fa-solid fa-check fa-xl pb-2" style="color: #18a073;"></i>
+                            <p class=" ps-3">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+                        </div>
+
+                        <div class="d-flex align-items-center">
+                            <i class="fa-solid fa-check fa-xl pb-2" style="color: #18a073;"></i>
+                            <p class=" ps-3">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor, sit amet
+                                consectetur adipisicing elit.</p>
+                        </div>
+
+                        <button type="button" class="fw-bold text-white"
+                            style="padding: 5px; width: 100px; background-color: #2ea47d; border: none;">Read
+                            More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- explore by category -->
+
+    <!-- job listing start -->
+
+    <div class="container">
+        <div class="joblisting bg-white">
+            <h1 class="text-center">Job Listing</h1>
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav m-auto border-3 border-bottom border-black">
+                            <li class="nav-item bttn">
+                                <a class="nav-link active fw-bold" aria-current="page" href="#">Featured</a>
+                            </li>
+                            <li class="nav-item bttn">
+                                <a class="nav-link active fw-bold" aria-current="page" href="#">Full Time</a>
+                            </li>
+                            <li class="nav-item bttn">
+                                <a class="nav-link active fw-bold" aria-current="page" href="#">Part Time</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container text-center bg-light border-bottom border-3">
+            <div class="row">
+                <div class="col-sm-3 g-">
+                    <img src="./images/TechCom-logo-design.jpg" class="w-50 h-100 p-3" alt="">
+                </div>
+                <div class="col-sm-9">
+                    <div class="row">
+                        <div class="col-8 col-sm-6 pt-4">
+                            <h4 class="text-start ">Software Engineer</h4>
+                            <div class="d-flex">
+                                <span class="d-flex pe-4"><i class="fa-solid fa-location-dot pe-2 pt-1"
+                                        style="color: #18a073;"></i>
+                                    <p>New York (USA)</p>
+                                </span>
+                                <span class="d-flex pe-4"><i class="fa-regular fa-clock pe-2 pt-1"
+                                        style="color: #18a073;"></i>
+                                    <p>Full Time</p>
+                                </span>
+                                <span class="d-flex pe-4">
+                                    <i class="fa-solid fa-money-check-dollar pe-2 pt-1" style="color: #18a073;"></i>
+                                    <p>$123-$456</p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-4 col-sm-6 ">
+                            <div class="">
+                                <div class="pt-4">
+                                    <i class="fa-regular fa-heart fa-lg p-2" style="color: #18a073;"></i>
+                                    <button type="button" class=" text-white"
+                                        style="padding: 3px; width: 100px; background-color: #2ea47d; border: none;">Apply
+                                        Now</button>
+                                </div>
+                                <div class="">
+                                    <span class=" ps-5">
+                                        <i class="fa-solid fa-calendar-days pe-3 pt-1" style="color: #18a073;"></i>
+                                        <p>Date Line : 01 Jan,2045</p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="contaoner bg-white border-bottom border-3 2nd pt-5">
+            <div class="container text-center bg-light">
+                <div class="row">
+                    <div class="col-sm-3 g-">
+                        <img src="./images/marketing.jpg" class="w-50 p-3" style="height: 120px;" alt="">
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="row">
+                            <div class="col-8 col-sm-6 pt-4">
+                                <h4 class="text-start ">Marketing Manager</h4>
+                                <div class="d-flex">
+                                    <span class="d-flex pe-4"><i class="fa-solid fa-location-dot pe-2 pt-1"
+                                            style="color: #18a073;"></i>
+                                        <p>New York (USA)</p>
+                                    </span>
+                                    <span class="d-flex pe-4"><i class="fa-regular fa-clock pe-2 pt-1"
+                                            style="color: #18a073;"></i>
+                                        <p>Full Time</p>
+                                    </span>
+                                    <span class="d-flex pe-4">
+                                        <i class="fa-solid fa-money-check-dollar pe-2 pt-1" style="color: #18a073;"></i>
+                                        <p>$123-$456</p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-4 col-sm-6 ">
+                                <div class="">
+                                    <div class="pt-4">
+                                        <i class="fa-regular fa-heart fa-lg p-2" style="color: #18a073;"></i>
+                                        <button type="button" class=" text-white"
+                                            style="padding: 3px; width: 100px; background-color: #2ea47d; border: none;">Apply
+                                            Now</button>
+                                    </div>
+                                    <div class="">
+                                        <span class=" ps-5">
+                                            <i class="fa-solid fa-calendar-days pe-3 pt-1" style="color: #18a073;"></i>
+                                            <p>Date Line : 01 Jan,2045</p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contaoner bg-white border-bottom border-3 2nd pt-5">
+            <div class="container text-center bg-light">
+                <div class="row">
+                    <div class="col-sm-3 g-">
+                        <img src="./images/data-exchange-logo-E4C138712C-seeklogo.com.png" class="w-50 p-3"
+                            style="height: 120px;" alt="">
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="row">
+                            <div class="col-8 col-sm-6 pt-4">
+                                <h4 class="text-start ">Product Designer</h4>
+                                <div class="d-flex">
+                                    <span class="d-flex pe-4"><i class="fa-solid fa-location-dot pe-2 pt-1"
+                                            style="color: #18a073;"></i>
+                                        <p>New York (USA)</p>
+                                    </span>
+                                    <span class="d-flex pe-4"><i class="fa-regular fa-clock pe-2 pt-1"
+                                            style="color: #18a073;"></i>
+                                        <p>Full Time</p>
+                                    </span>
+                                    <span class="d-flex pe-4">
+                                        <i class="fa-solid fa-money-check-dollar pe-2 pt-1" style="color: #18a073;"></i>
+                                        <p>$123-$456</p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-4 col-sm-6 ">
+                                <div class="">
+                                    <div class="pt-4">
+                                        <i class="fa-regular fa-heart fa-lg p-2" style="color: #18a073;"></i>
+                                        <button type="button" class=" text-white"
+                                            style="padding: 3px; width: 100px; background-color: #2ea47d; border: none;">Apply
+                                            Now</button>
+                                    </div>
+                                    <div class="">
+                                        <span class=" ps-5">
+                                            <i class="fa-solid fa-calendar-days pe-3 pt-1" style="color: #18a073;"></i>
+                                            <p>Date Line : 01 Jan,2045</p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contaoner bg-white border-bottom border-3 2nd pt-5">
+            <div class="container text-center bg-light">
+                <div class="row">
+                    <div class="col-sm-3 g-">
+                        <img src="./images/fuzion-source-dragonfly-logo-F49EDDE515-seeklogo.com.png" class="p-3"
+                            style="height: 120px; width: 120px;" alt="">
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="row">
+                            <div class="col-8 col-sm-6 pt-4">
+                                <h4 class="text-start ">Creative Designer</h4>
+                                <div class="d-flex">
+                                    <span class="d-flex pe-4"><i class="fa-solid fa-location-dot pe-2 pt-1"
+                                            style="color: #18a073;"></i>
+                                        <p>New York (USA)</p>
+                                    </span>
+                                    <span class="d-flex pe-4"><i class="fa-regular fa-clock pe-2 pt-1"
+                                            style="color: #18a073;"></i>
+                                        <p>Full Time</p>
+                                    </span>
+                                    <span class="d-flex pe-4">
+                                        <i class="fa-solid fa-money-check-dollar pe-2 pt-1" style="color: #18a073;"></i>
+                                        <p>$123-$456</p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-4 col-sm-6 ">
+                                <div class="">
+                                    <div class="pt-4">
+                                        <i class="fa-regular fa-heart fa-lg p-2" style="color: #18a073;"></i>
+                                        <button type="button" class=" text-white"
+                                            style="padding: 3px; width: 100px; background-color: #2ea47d; border: none;">Apply
+                                            Now</button>
+                                    </div>
+                                    <div class="">
+                                        <span class=" ps-5">
+                                            <i class="fa-solid fa-calendar-days pe-3 pt-1" style="color: #18a073;"></i>
+                                            <p>Date Line : 01 Jan,2045</p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="contaoner bg-white border-bottom border-3 2nd pt-5">
+            <div class="container text-center bg-light">
+                <div class="row">
+                    <div class="col-sm-3 g-">
+                        <img src="./images/Blue-Phlare_B.jpg" class="p-3 w-50 h-100" alt="">
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="row">
+                            <div class="col-8 col-sm-6 pt-4">
+                                <h4 class="text-start ">Wordpress Designer</h4>
+                                <div class="d-flex">
+                                    <span class="d-flex pe-4"><i class="fa-solid fa-location-dot pe-2 pt-1"
+                                            style="color: #18a073;"></i>
+                                        <p>New York (USA)</p>
+                                    </span>
+                                    <span class="d-flex pe-4"><i class="fa-regular fa-clock pe-2 pt-1"
+                                            style="color: #18a073;"></i>
+                                        <p>Full Time</p>
+                                    </span>
+                                    <span class="d-flex pe-4">
+                                        <i class="fa-solid fa-money-check-dollar pe-2 pt-1" style="color: #18a073;"></i>
+                                        <p>$123-$456</p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-4 col-sm-6 ">
+                                <div class="">
+                                    <div class="pt-4">
+                                        <i class="fa-regular fa-heart fa-lg p-2" style="color: #18a073;"></i>
+                                        <button type="button" class=" text-white"
+                                            style="padding: 3px; width: 100px; background-color: #2ea47d; border: none;">Apply
+                                            Now</button>
+                                    </div>
+                                    <div class="">
+                                        <span class=" ps-5">
+                                            <i class="fa-solid fa-calendar-days pe-3 pt-1" style="color: #18a073;"></i>
+                                            <p>Date Line : 01 Jan,2045</p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-center mt-4"><button type="button"
+                    class="fw-bold text-white p-3" style="background-color: #00b377; border: none;">Browse More
+                    Jobs</button></div>
+
+
+            <!-- job listing end here -->
+
+            <!-- our client say strat here -->
+
+
+            <div class="container mt-5">
+                <h1 class=" text-center">Our Clients Say!!! </h1>
+
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <div class="card" style="background-color: #c5fbe9;">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fa-solid fa-comments fa-lg"
+                                        style="color: #18a073;"></i></h5>
+                                <!-- <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6> -->
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <figure class="figure d-flex mb-0">
+                                    <img src="./images/Sandeep.jpg" style="width: 60px; height: 50px;"
+                                        class="figure-img img-fluid rounded" alt="...">
+                                    <div class="ps-3 pt-1">
+                                        <h6>Sandeep sir <br> Proffetion</h6>
+                                        <!-- <figcaption class="figure-caption"></figcaption> -->
+                                    </div>
+                                </figure>
+                                <!-- <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a> -->
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4">
+                        <div class="card  bg-success">
+                            <div class="card-body">
+                                <h5 class="card-title text-white"><i class="fa-solid fa-comments fa-lg"></i></h5>
+                                <!-- <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6> -->
+                                <p class="card-text text-white">Some quick example text to build on the card title and
+                                    make up the
+                                    bulk of the card's content.</p>
+                                <figure class="figure d-flex mb-0">
+                                    <img src="./images/Sandeep.jpg" style="width: 60px; height: 50px;"
+                                        class="figure-img img-fluid rounded" alt="...">
+                                    <div class="ps-3 pt-1 text-white">
+                                        <h6>Sandeep sir <br> Proffetion</h6>
+                                        <!-- <figcaption class="figure-caption"></figcaption> -->
+                                    </div>
+                                </figure>
+                                <!-- <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card" style="background-color: #c5fbe9;">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fa-solid fa-comments fa-lg"
+                                        style="color: #18a073;"></i></h5>
+                                <!-- <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6> -->
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <figure class="figure d-flex mb-0">
+                                    <img src="./images/Sandeep.jpg" style="width: 60px; height: 50px;"
+                                        class="figure-img img-fluid rounded" alt="...">
+                                    <div class="ps-3 pt-1">
+                                        <h6>Sandeep sir <br> Proffetion</h6>
+                                        <!-- <figcaption class="figure-caption"></figcaption> -->
+                                    </div>
+                                </figure>
+                                <!-- <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- our client say end here -->
+
+
+
+            <!-- footer start here -->
+            <div class="container mt-5 bg-dark">
+                <div class="row">
+                    <div class="col-md-3 text-white-50 p-5">
+                        <h3 class="text-white">Company</h3>
+                        <div>
+                            <p>> About Us</p>
+                            <p>> Contact Us</p>
+                            <p>> Our Services</p>
+                            <p>> Privacy Policy</p>
+                            <p>> Terms & Condition</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 text-white-50 p-5">
+                        <h3 class="text-white">Quick Links</h3>
+                        <div>
+                            <p>> About Us</p>
+                            <p>> Contact Us</p>
+                            <p>> Our Services</p>
+                            <p>> Privacy Policy</p>
+                            <p>> Terms & Condition</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 text-white-50 p-5">
+                        <h3 class="text-white">Contact</h3>
+                        <div class="d-flex align-items-center">
+                            <i class="fa-solid fa-location-dot fa-lg pb-3 pe-2"></i>
+                            <p>123 Street, New York, USA</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fa-solid fa-phone fa-lg pb-3 pe-2"></i>
+                            <p>+012 345 67890</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fa-solid fa-envelope fa-lg pb-3 pe-2"></i>
+                            <p>+012 345 67890</p>
+                        </div>
+                        <div>
+                            <div class="row">
+                                <div class="col-md-3 d-flex pt-4">
+                                    <i class="fa-brands fa-square-twitter fa-2xl"></i>
+                                    <i class="fa-brands fa-square-facebook fa-2xl ps-3"></i>
+                                    <i class="fa-brands fa-youtube fa-2xl ps-3"></i>
+                                    <i class="fa-brands fa-linkedin fa-2xl ps-3"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 text-white-50 p-5">
+                        <h3 class="text-white">Newsletter</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At error, distinctio nobis hic
+                            magnam ut.</p>
+
+                        <nav class="navbar bg-body- border border-1 border-text-white-50">
+                            <div class="container-fluid">
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2 bg-transparent border-0" type="search"
+                                        placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-success" type="submit">SignUp</button>
+                                </form>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class=" border-1 border-bottom border-white-50" style="width: 99.7%;"></div>
+                <div class="p-3 d-inline">
+                    <div class="text-center d-inline"><span class="text-white" style="text-decoration: underline;">Your
+                            Site Name,</span><span class="text-white-50"> All Right Reserved. Designed By</span> <span
+                            class="text-white" style="text-decoration: underline;">HTML Codex</span></div>
+                    <span class="d-flex text-white justify-content-end">
+                        <h6 class="border-end pe-2">Home</h6>
+                        <h6 class="border-end pe-2 ps-2">Cookies</h6>
+                        <h6 class="border-end pe-2 ps-2">Help</h6>
+                        <h6 class=" pe-2 ps-2">FQAs</h6>
+                    </span>
+                </div>
+
+
+            </div>
+            <!-- footer end here -->
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
